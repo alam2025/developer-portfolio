@@ -319,13 +319,21 @@ footer p {
     color: #474747;
 }
 
-footer input {
+footer input ,textarea{
     display: block;
-    width: fit-content;
     background: #FFFFFF;
     border-radius: 5px;
-    width: 70%;
-    height: 2rem;
+   width: 100%;
     border: 0;
+    padding: 18px 30px;
 
 } 
+
+.social-media{
+    margin-top: 20px;
+    
+}
+.social-media>a{
+    padding: 10px;
+    margin: 0 5px;
+}
