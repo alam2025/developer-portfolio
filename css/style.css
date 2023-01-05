@@ -52,7 +52,7 @@ nav>ul li {
 
 .btn-primary {
     background-color: #FD6E0A;
-    padding: 16px 32px;
+    padding: 10px 32px;
     border: none;
     border-radius: 10px;
     color: #fff;
@@ -291,3 +291,41 @@ td {
     margin-top: 30px;
     padding-bottom: 20px;
 }
+
+/* footer styles */
+footer {
+    display: flex;
+    padding: 100px 130px;
+    background: #FFF8F3;
+    gap: 10%;
+}
+
+.box-area {
+    width: 45%;
+}
+
+footer h4 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+
+    color: #181818;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #474747;
+}
+
+footer input {
+    display: block;
+    width: fit-content;
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 70%;
+    height: 2rem;
+    border: 0;
+
+} 
