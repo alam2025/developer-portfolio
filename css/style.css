@@ -336,4 +336,5 @@ footer input ,textarea{
 .social-media>a{
     padding: 10px;
     margin: 0 5px;
+    text-decoration: none;
 }
