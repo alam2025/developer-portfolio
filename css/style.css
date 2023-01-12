@@ -308,20 +308,20 @@ footer input ,textarea{
 .social-media{
     margin-top: 20px;
     
+    
 }
 .social-media>a{
     padding: 10px;
     margin: 0 5px;
     text-decoration: none;
+    
 }
 
-@media screen and (max-width:576px) {
+@media screen and  (max-width:576px) {
+    
    
 }
 
-.hide{
-    display: none;
-}
 
 @media screen and (max-width:576px) {
     nav > ul {
@@ -369,6 +369,9 @@ footer input ,textarea{
       }
 }
 @media screen and (min-width:577px) and (max-width:992px) {
+    .header-nav{
+        justify-content: center;
+    }
     .banner{
         flex-direction: column;
         align-items:flex-end;
