@@ -108,8 +108,7 @@ nav>ul li {
 }
 
 .banner-image {
-    width: 100%;
-    height: 100%;
+    width: 400px;
 }
 
 .banner-btn {
@@ -370,6 +369,10 @@ footer input ,textarea{
       }
 }
 @media screen and (min-width:577px) and (max-width:992px) {
+    .banner{
+        flex-direction: column;
+        align-items:flex-end;
+    }
     .skills-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
