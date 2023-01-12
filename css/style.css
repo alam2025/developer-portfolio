@@ -13,10 +13,13 @@
 }
 
 .header-nav {
+    max-width: 80%;
+    margin: auto auto;
     display: flex;
     justify-content: space-between;
-    margin: 0 150px;
+    /* margin: 0 150px; */
     margin-bottom: 40px;
+   
 
 }
 
@@ -105,8 +108,8 @@ nav>ul li {
 }
 
 .banner-image {
-    width: 584px;
-    height: 676px;
+    width: 100%;
+    height: 100%;
 }
 
 .banner-btn {
@@ -129,6 +132,7 @@ main {
 }
 
 .about-header {
+    margin: 50px;
     text-align: center;
     font-weight: 700;
     font-size: 35px;
@@ -147,41 +151,14 @@ main {
     color: #757575;
 }
 
-/* table */
-table {
-    margin-top: 30px;
+
+.p-info{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
 }
 
-table>tr {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    /* or 150% */
-
-    text-align: center;
-
-    /* Dark 03 */
-
-    color: #757575;
-}
-
-th,
-td {
-    padding: 0 0.5rem;
-    text-align: center;
-}
-
-th {
-    font-weight: 400;
-    color: #757575;
-}
-
-td {
-    font-weight: 700;
-    color: #474747;
-}
-
-/* what i do section */
 .what-i-do {
     margin-top: 50px;
 }
@@ -296,27 +273,27 @@ td {
 footer {
     display: flex;
     padding: 100px 130px;
-    background: #FFF8F3;
+    background: #1a1918;
     gap: 10%;
+    color: white;
 }
 
 .box-area {
     width: 45%;
+   
 }
 
 footer h4 {
     font-weight: 700;
     font-size: 35px;
-    line-height: 48px;
-
-    color: #181818;
+    line-height: 48px; 
     margin-bottom: 20px;
 }
 
 footer p {
     font-size: 16px;
     line-height: 28px;
-    color: #474747;
+    
 }
 
 footer input ,textarea{
@@ -337,4 +314,77 @@ footer input ,textarea{
     padding: 10px;
     margin: 0 5px;
     text-decoration: none;
+}
+
+@media screen and (max-width:576px) {
+   
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    nav > ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    .banner-image{
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        margin: 0;
+    }
+    .banner-title{
+        font-size: 2.5rem;
+    }
+    .about{
+        padding: 10px;
+    }
+
+    footer,
+    .skills-container,
+    .sub-section{
+    flex-direction: column;
+    padding: 10px 20px; 
+    }
+    
+    .what-i-do-des {
+        padding: 20px 10px;
+    }
+    .summery {
+        margin: 20px;
+        font-size: 30px;
+    }
+   
+    .section-header{
+        font-size: 25px;
+    }
+
+
+      .box-area {
+        width: 80%;
+      }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+        }
+        .what-i-do-des {
+            padding: 40px 50px;
+        }
+        .sub-section{
+            padding: 20px;
+
+        }
+        .summery {
+            margin: 30px;
+            font-size: 30px;
+        }
+    
 }
